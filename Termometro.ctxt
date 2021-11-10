@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Termometro
+comment1.params=costeDelTermometro\ termometroDeMercurio
+comment1.target=Termometro(int,\ boolean)
+comment1.text=\r\n\ Crea\ termometro.\r\n
+comment2.params=marcaDelTermometro
+comment2.target=void\ setMarca(java.lang.String)
+comment2.text=\r\n\ fijar\ la\ marca\ del\ termometro.\r\n
+comment3.params=
+comment3.target=int\ rebajaPrecio()
+comment3.text=\r\n\ Modifica\ el\ coste\ del\ termometro\ rebajando\ su\ coste\ un\ 20%.\r\n
+comment4.params=
+comment4.target=void\ cambiarTipoDeTermometro()
+comment5.params=
+comment5.target=void\ imprimeInformacion()
+comment6.params=
+comment6.target=java.lang.String\ getMarcaTermometro()
+comment7.params=
+comment7.target=int\ getCosteTermometro()
+comment8.params=
+comment8.target=boolean\ getTermometroMercurio()
+comment9.params=
+comment9.target=java.lang.String\ estadoTermometro()
+numComments=10
