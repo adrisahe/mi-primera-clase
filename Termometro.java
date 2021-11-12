@@ -30,16 +30,15 @@ public class Termometro {
     }
     
     public void cambiarTipoDeTermometro () {
-        if (termometroMercurio) {
-            termometroMercurio = false;
-        }
-        else {
-            termometroMercurio = true;
-        }
+        termometroMercurio = !termometroMercurio;
     }
     
     public void imprimeInformacion () {
-        System.out.println ("marca: " + marcaTermometro + " | " + " coste: " + costeTermometro + " euros " + "| " + "tipo: " + termometroMercurio);
+        String tipoTermometro = "termometroDigital";
+        if (termometroMercurio == true){
+            tipoTermometro = "termometro de mercurio";
+        }
+        System.out.println ("marca: " + marcaTermometro + " | " + " coste: " + costeTermometro + " euros " + "| " + "tipo: " + tipoTermometro);
     }
     
     public String getMarcaTermometro () {
@@ -51,10 +50,18 @@ public class Termometro {
     }
     
     public boolean getTermometroMercurio () {
+        String tipoTermometro = "termometroDigital";
+        if (termometroMercurio == true){
+            tipoTermometro = "termometro de mercurio";
+        }
         return termometroMercurio;
     }
     
     public String estadoTermometro () {
+        String tipoTermometro = "termometroDigital";
+        if (termometroMercurio == true){
+            tipoTermometro = "termometro de mercurio";
+        }
         return ("marca: " + marcaTermometro + " | " + "coste: " + costeTermometro + " euros " + "| " + "tipo de termometro: " + termometroMercurio);
     }
 }
